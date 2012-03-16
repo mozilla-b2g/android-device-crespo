@@ -84,10 +84,6 @@ PRODUCT_PACKAGES += \
 	Nfc \
 	Tag
 
-# Commands to migrate prefs from com.android.nfc3 to com.android.nfc
-PRODUCT_COPY_FILES += \
-	packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt
-
 # file that declares the MIFARE NFC constant
 PRODUCT_COPY_FILES += \
 	device/sample/nxp/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
@@ -183,8 +179,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/base/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
 	frameworks/base/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
 	frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-	frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+	frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
