@@ -39,6 +39,7 @@ on fs
     chmod 770 /efs/imei
     mount ext4 /dev/block/platform/s3c-sdhci.0/by-name/system /system wait rw
     chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/plugin-container
     chmod 0755 /system/b2g/updater
     mount ext4 /dev/block/platform/s3c-sdhci.0/by-name/userdata /data wait noatime nosuid nodev nomblk_io_submit
 
