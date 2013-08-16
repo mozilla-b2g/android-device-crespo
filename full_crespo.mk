@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.moz.ril.callstate_down_is_up=true
+  ro.moz.ril.callstate_down_is_up=true \
+  ro.moz.ril.stk_envelope_w_stat=true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
